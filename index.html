@@ -10,7 +10,7 @@
 body{margin:0;background:#f5f7f4;color:var(--dark);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 a{color:inherit}.container{max-width:1120px;margin:auto;padding:0 28px}
 nav{position:sticky;top:0;z-index:20;background:rgba(245,247,244,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.navin{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;letter-spacing:-.04em;font-size:22px;color:var(--green)}
+.navin{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-weight:900;letter-spacing:-.04em;font-size:18px;color:var(--green)}
 .navlinks{display:flex;gap:22px;font-size:13px;color:var(--muted)}.navlinks a{text-decoration:none}
 .hero{padding:90px 0 72px;background:linear-gradient(135deg,#eef5ef,#f7f6ef 65%,#e4eee7);border-bottom:1px solid var(--line)}
 .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--green2);margin-bottom:15px}
@@ -36,22 +36,22 @@ section{padding:76px 0}.sectionhead{display:flex;align-items:end;justify-content
 .project h3{font-size:18px;margin:0 0 8px}.project p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}.project .tag{font-size:10px;color:var(--green2);font-weight:900;letter-spacing:.08em;text-transform:uppercase}.project a{text-decoration:none}
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.creative{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
 .creative img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}.caption{padding:15px}.caption strong{display:block;font-size:14px}.caption span{display:block;color:var(--muted);font-size:11px;margin-top:5px}
-.beyond{display:grid;grid-template-columns:1fr 1fr;gap:14px}.beyondcard{background:var(--cream);border:1px solid var(--line);border-radius:22px;padding:25px;min-height:170px}
-.beyondcard strong{font-size:18px;display:block;margin-bottom:8px}.beyondcard span{color:var(--muted);font-size:13px;line-height:1.6}
+.carousel{max-width:720px;margin:auto}.carousel .creative{display:none}.carousel .creative.active{display:block}.carousel .creative img{max-height:620px;aspect-ratio:4/3;object-fit:contain;background:#f5f7f4}
+.hobby-carousel{max-width:860px}.hobby-slide{display:none;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}.hobby-slide.active{display:block}.hobby-copy{padding:20px 24px}.hobby-copy h3{margin:0 0 8px;font-size:20px}.hobby-copy p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}.hobby-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:#f5f7f4}.hobby-photos img{width:100%;height:250px;display:block;object-fit:cover}.hobby-video{width:100%;max-height:460px;display:block;background:#17251e}
 .contact{background:var(--green);color:#fff;border-radius:28px;padding:42px;margin-bottom:60px;display:flex;align-items:center;justify-content:space-between;gap:25px}
 .contact h2{font-size:34px;letter-spacing:-.04em;margin:0 0 8px}.contact p{color:#dce8df;max-width:650px;line-height:1.6;margin:0}.contact .btn{background:#fff;color:var(--green);border:0}
 footer{padding:30px 0 50px;color:var(--muted);font-size:12px;text-align:center}
-@media(max-width:760px){.container{padding:0 18px}.navlinks{display:none}.hero{padding:65px 0 55px}.about,.projects,.gallery,.beyond{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.contact{flex-direction:column;align-items:flex-start}h1{font-size:52px}section{padding:55px 0}}
+@media(max-width:760px){.container{padding:0 18px}.navlinks{display:none}.hero{padding:65px 0 55px}.about,.projects,.gallery{grid-template-columns:1fr}.hobby-photos{grid-template-columns:1fr}.hobby-photos img{height:220px}.stats{grid-template-columns:1fr 1fr}.contact{flex-direction:column;align-items:flex-start}h1{font-size:52px}section{padding:55px 0}}
 </style>
 </head>
 <body>
-<nav><div class="container navin"><div class="logo">YOUR NAME<span style="color:#18a86b">.</span></div><div class="navlinks"><a href="#experience">Experience</a><a href="#toolkit">Toolkit</a><a href="#projects">Projects</a><a href="#creative">Creative</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="container navin"><div class="logo">Jarrel Casey Buenaventura<span style="color:#18a86b">.</span></div><div class="navlinks"><a href="#experience">Experience</a><a href="#toolkit">Toolkit</a><a href="#projects">Projects</a><a href="#creative">Creative</a><a href="#contact">Contact</a></div></div></nav>
 
 <header class="hero"><div class="container">
 <div class="eyebrow">Recruiter · Talent Operations · Virtual Assistant</div>
 <h1>I make hiring feel less like a spreadsheet.</h1>
 <p>5+ years across recruitment, research, talent operations and HR, with experience spanning Philippine and global talent markets. I also enjoy the other side of the work: automation, AI tools, creative content, research and making messy processes considerably less messy.</p>
-<div class="actions"><a class="btn primary" href="mailto:your.email@example.com">✉ Email me</a><a class="btn" href="https://www.linkedin.com" target="_blank">LinkedIn ↗</a><a class="btn" href="#creative">Sample works ↓</a><a class="btn" href="#beyond">Outside work ↓</a></div>
+<div class="actions"><a class="btn primary" href="mailto:buenaventura.jarrel@gmail.com">✉ Email me</a><a class="btn" href="https://www.linkedin.com/in/jarrelbuenaventura/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn" href="#creative">Sample works ↓</a><a class="btn" href="#beyond">Outside work ↓</a></div>
 </div></header>
 
 <main>
@@ -100,7 +100,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:12px;text-align:center}
 </div></div></section>
 
 <section id="toolkit"><div class="container"><div class="sectionhead"><h2>My toolkit</h2><span>People · Systems · AI · Creative</span></div><div class="toolwrap"><div class="chips">
-<span class="chip">LinkedIn Recruiter</span><span class="chip">Sales Navigator</span><span class="chip">Ashby</span><span class="chip">RecruitCRM</span><span class="chip">Paraform</span><span class="chip">Salesforce</span><span class="chip">JotForm</span><span class="chip">Notion</span><span class="chip">Slack</span><span class="chip">Google Workspace</span><span class="chip">Microsoft Office</span><span class="chip">Canva</span><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Google Flow</span><span class="chip">CapCut</span><span class="chip">Granola</span><span class="chip">Gong</span><span class="chip">CoRecruit</span>
+<span class="chip">LinkedIn Recruiter</span><span class="chip">Sales Navigator</span><span class="chip">Ashby</span><span class="chip">RecruitCRM</span><span class="chip">Paraform</span><span class="chip">Salesforce</span><span class="chip">JotForm</span><span class="chip">Notion</span><span class="chip">Slack</span><span class="chip">Google Workspace</span><span class="chip">Microsoft Office</span><span class="chip">Canva</span><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Google Flow</span><span class="chip">CapCut</span><span class="chip">Granola</span><span class="chip">Gong</span><span class="chip">CoRecruit</span><span class="chip">CloudCannon</span>
 </div></div></div></section>
 
 <section id="projects"><div class="container"><div class="sectionhead"><h2>Selected projects</h2><span>Click a category</span></div>
@@ -122,20 +122,23 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:12px;text-align:center}
 
 <section id="creative"><div class="container"><div class="sectionhead"><h2>Publication Materials</h2><span>Creative · EBAS</span></div>
 <div class="panel" style="margin-bottom:18px"><p><strong>A little proof that I don't only live inside an ATS.</strong> These examples combine research, visual storytelling, AI-assisted creative work and practical social media communication.</p></div>
-<div class="gallery">
-<article class="creative"><img src="Saas.png" alt="Market Shift publication"><div class="caption"><strong>Market Shift. New Rules.</strong><span>Industry insight · SaaS · AI · Recruitment marketing</span></div></article>
+<div class="carousel" aria-roledescription="carousel" aria-label="Publication materials">
+<article class="creative active"><img src="Saas.png" alt="Market Shift publication"><div class="caption"><strong>Market Shift. New Rules.</strong><span>Industry insight · SaaS · AI · Recruitment marketing</span></div></article>
 <article class="creative"><img src="Hiring.png" alt="Hiring expectations versus reality"><div class="caption"><strong>Hiring Be Like: Expectations vs Reality</strong><span>Recruitment humor · Employer branding</span></div></article>
 <article class="creative"><img src="AI.png" alt="AI Notetakers publication"><div class="caption"><strong>AI Notetakers</strong><span>AI trends · Workplace content</span></div></article>
 <article class="creative"><img src="Meme.png" alt="The best people are not even in your funnel"><div class="caption"><strong>The Best People Are Not Even in Your Funnel</strong><span>Recruiting insight · Creative campaign</span></div></article>
 <article class="creative"><img src="AE.png" alt="Additional EBAS social content"><div class="caption"><strong>Social Content Series</strong><span>Recruitment marketing · Content design</span></div></article>
 </div></div></section>
 
-<section id="beyond"><div class="container"><div class="sectionhead"><h2>Beyond the résumé</h2><span>The human behind the work</span></div><div class="beyond">
-<div class="beyondcard"><strong>☘ Hobbies & little obsessions</strong><span>A space for hobby photos, interests, travel, pets, things I make, and anything that makes the portfolio feel unmistakably mine.</span></div>
-<div class="beyondcard"><strong>▶ Short-form video</strong><span>A space for creative edits, experiments and visual storytelling. Samples can be added here later.</span></div>
+<section id="beyond"><div class="container"><div class="sectionhead"><h2>Beyond the résumé</h2><span>Four things I enjoy outside work</span></div>
+<div class="carousel hobby-carousel" aria-roledescription="carousel" aria-label="Hobbies">
+<article class="hobby-slide active"><div class="hobby-photos"><img src="model-barbatos.jpg" alt="Painted and customized Barbatos model kit"><img src="model-kimarius.jpg" alt="Customized Kimaris Trooper model kit"><img src="model-sazabi.jpg" alt="Customized Sazabi model kit"></div><div class="hobby-copy"><h3>Model kit building</h3><p>I paint and modify model kits, and I’ve entered—and won—competitions. I have less time for building these days, but I still enjoy the patience and close attention to detail it takes. That same care carries into my work.</p></div></article>
+<article class="hobby-slide"><div class="hobby-photos"><img src="dog-1.jpg" alt="One of Jarrel’s dogs"><img src="dog-2.jpg" alt="One of Jarrel’s dogs riding in the car"><img src="dog-3.jpg" alt="One of Jarrel’s dogs outdoors"></div><div class="hobby-copy"><h3>Dogs</h3><p>I’m a dog person and have a few of my own. They’re a big part of life outside work.</p></div></article>
+<article class="hobby-slide"><div class="hobby-photos"><img src="food-1.jpg" alt="A meal Jarrel enjoyed"><img src="food-2.jpg" alt="A restaurant meal"><img src="food-3.jpg" alt="A plate of food"><img src="food-4.jpg" alt="A meal with vegetables"><img src="food-coffee-miktea.png" alt="Café visit with friends"></div><div class="hobby-copy"><h3>Food</h3><p>I enjoy cooking and trying food from different places—finding new favorites, one meal at a time.</p></div></article>
+<article class="hobby-slide"><video class="hobby-video" controls playsinline preload="metadata"><source src="ai-story-video.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="hobby-copy"><h3>Learning to create AI videos</h3><p>I’m learning to turn stories I write into AI-generated videos, bringing my own ideas to life one experiment at a time.</p></div></article>
 </div></div></section>
 
-<section id="contact"><div class="container"><div class="contact"><div><h2>Have a role, project, or wonderfully chaotic to-do list?</h2><p>I'm open to recruitment opportunities, VA support, research-heavy projects and creative side quests.</p></div><a class="btn" href="mailto:your.email@example.com">Email me →</a></div></div></section>
+<section id="contact"><div class="container"><div class="contact"><div><h2>Have a role, project, or wonderfully chaotic to-do list?</h2><p>I'm open to recruitment opportunities, VA support, research-heavy projects and creative side quests.</p></div><a class="btn" href="mailto:buenaventura.jarrel@gmail.com">Email me →</a></div></div></section>
 </main>
 <footer>Recruiter · Talent Operations · Virtual Assistant · Research · AI · Creative</footer>
 
@@ -146,6 +149,14 @@ document.querySelectorAll(".filter").forEach(function(btn){
     document.querySelectorAll(".filter").forEach(function(b){b.classList.toggle("active",b===btn)});
     document.querySelectorAll(".project").forEach(function(p){p.style.display=(f==="all"||p.dataset.cat===f)?"flex":"none"});
   });
+});
+document.querySelectorAll(".carousel").forEach(function(carousel){
+  var slides=Array.from(carousel.querySelectorAll(".creative, .hobby-slide"));
+  var currentSlide=0;
+  function showSlide(index){currentSlide=(index+slides.length)%slides.length;slides.forEach(function(slide,i){slide.classList.toggle("active",i===currentSlide)});}
+  var carouselTimer=setInterval(function(){showSlide(currentSlide+1)},6000);
+  carousel.addEventListener("mouseenter",function(){clearInterval(carouselTimer)});
+  carousel.addEventListener("mouseleave",function(){clearInterval(carouselTimer);carouselTimer=setInterval(function(){showSlide(currentSlide+1)},6000)});
 });
 </script>
 </body></html>
